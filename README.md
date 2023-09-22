@@ -13,6 +13,7 @@ python3 main.py
 ```sh
 git clone
 cd app
+# Se crea un entorno para instalar las versiones de Python y librerías especificas.
 python3 -m venv env
 source env/bin/activate
 pip3 install -r requirements.txt

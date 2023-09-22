@@ -1,0 +1,10 @@
+services:
+  web-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: # Esto enlaza los archivos locales con los del contenedor para que se actualicen al tiempo
+      - .:/web-server
+    ports: # Une el puerto 80 la maquina local con el puerto 80 del contenedor
+      - '80:80'
+    

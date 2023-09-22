@@ -1,0 +1,8 @@
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: # Esto enlaza los archivos locales con los del contenedor para que se actualicen al tiempo
+      - .:/app
+    
